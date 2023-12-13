@@ -89,11 +89,12 @@ main(int    argc,
     timer_start(&(global_timers[TIMER_VIC_INIT]));
 
     // Initialize MPI - note: logging not yet initialized
-    status = MPI_Init(&argc, &argv);
+    status = MPI_Init(&argc, &argv); 
+    //MPI_Init(&argc, &argv); 
     if (status != MPI_SUCCESS) {
         fprintf(stderr, "MPI error in main(): %d\n", status);
         exit(EXIT_FAILURE);
-    }
+    } 
 
     // Initialize Log Destination
     initialize_log();

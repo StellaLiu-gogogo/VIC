@@ -1,0 +1,51 @@
+{
+  "configurations": [
+    {
+      "name": "(gdb) Launch with netCDF",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/lustre/nobackup/WUR/ESG/liu297/gitrepo/VIC-WUR-GWM-1910/vic_online/vic_image_gwm_offline.exe",
+      "args": [
+        "-g",
+        "/lustre/nobackup/WUR/ESG/liu297/vic_indus/07OnecellDebug/6cell_humanimpact_GWM.txt"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/home/WUR/liu297/miniconda3/envs/gdb/bin/gdb",
+      "environment": [
+        {
+          "name": "LD_LIBRARY_PATH",
+          "value": "/home/WUR/liu297/miniconda3/envs/gdb/lib:$LD_LIBRARY_PATH"
+        }
+      ],
+      "setupCommands": [
+            {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+            }
+        ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/lustre/nobackup/WUR/ESG/liu297/gitrepo",
+      "program": "/lustre/nobackup/WUR/ESG/liu297/gitrepo/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

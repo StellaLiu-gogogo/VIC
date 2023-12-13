@@ -240,7 +240,7 @@ typedef struct {
 
     short unsigned int UH_LENGTH;       /**< routing sub-step (unit-hydrograph) length */
     bool FORCE_ROUTING;                 /**< routing (inflow) forcing flag */
-    bool FORCE_LANDUSE; /**< landuse forcing flag */
+    bool FORCE_LANDUSE;                 /**< landuse forcing flag */
     short unsigned int NDAMTYPES;       /**< maximum number of dams per cell */
     short unsigned int NWUTYPES;        /**< number of water-use sectors */
     short unsigned int NWURECEIVING;    /**< maximum number of remote water-users per cell */
